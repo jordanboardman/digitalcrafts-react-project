@@ -9,7 +9,6 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea, Container } from "@mui/material";
 import Button from "@mui/material/Button";
-import Paper from "@mui/material";
 
 const Home = () => {
   // const [products, setProducts] = useState("placeholder");
