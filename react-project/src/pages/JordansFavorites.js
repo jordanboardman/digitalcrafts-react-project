@@ -1,7 +1,14 @@
 import React from "react";
+import { Typography } from "@mui/material";
 
 const JordansFavorites = () => {
-  return <h1>Yo Jordan's Favs</h1>;
+  return (
+    <Typography
+      sx={{ display: "flex", justifyContent: "center", fontFamily: "luminari" }}
+    >
+      Future Jordan's Favorites
+    </Typography>
+  );
 };
 
 export default JordansFavorites;

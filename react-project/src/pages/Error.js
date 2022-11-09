@@ -13,7 +13,7 @@ const card = (
       {/* <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
         Uh Oh!
       </Typography> */}
-      <Typography variant="h5" component="div">
+      <Typography sx={{ fontFamily: "luminari" }} variant="h5" component="div">
         Oops! Time to call it a night, my dude. Cheers!
       </Typography>
 
@@ -23,7 +23,11 @@ const card = (
     </CardContent>
     <CardActions sx={{ display: "flex", justifyContent: "center" }}>
       <Link to="/" underline="none">
-        <Button size="small" variant="contained">
+        <Button
+          sx={{ fontFamily: "luminari" }}
+          size="small"
+          variant="contained"
+        >
           Back to Home
         </Button>
       </Link>

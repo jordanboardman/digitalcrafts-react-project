@@ -1,7 +1,14 @@
 import React from "react";
+import { Typography } from "@mui/material";
 
 const AddFavorites = () => {
-  return <h1>Yo Add Favs</h1>;
+  return (
+    <Typography
+      sx={{ display: "flex", justifyContent: "center", fontFamily: "luminari" }}
+    >
+      Future Favorites Page
+    </Typography>
+  );
 };
 
 export default AddFavorites;

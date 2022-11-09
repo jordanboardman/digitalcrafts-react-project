@@ -1,10 +1,13 @@
 import React from "react";
+import { Typography } from "@mui/material";
 
 const About = () => {
   return (
-    <div>
-      <h1>Yo ABout</h1>
-    </div>
+    <Typography
+      sx={{ display: "flex", justifyContent: "center", fontFamily: "luminari" }}
+    >
+      Future About Page
+    </Typography>
   );
 };
 
