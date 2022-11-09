@@ -89,7 +89,7 @@ const Home = () => {
       <Container sx={{ display: "flex", justifyContent: "space-evenly" }}>
         <Button
           elevation={3}
-          sx={{ fontFamily: "luminari" }}
+          sx={{ fontFamily: "luminari", backgroundColor: "#CC8E69" }}
           variant="contained"
           onClick={() => dispatch(decrementCount(1))}
         >
@@ -98,7 +98,7 @@ const Home = () => {
 
         <Button
           elevation={3}
-          sx={{ fontFamily: "luminari" }}
+          sx={{ fontFamily: "luminari", backgroundColor: "#CC8E69" }}
           variant="contained"
           onClick={() => dispatch(incrementCount(1))}
         >
