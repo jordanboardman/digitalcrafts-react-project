@@ -3,8 +3,6 @@ import React from "react";
 import Home from "./pages/Home";
 import { useState, useEffect } from "react";
 
-const url = "www.thecocktaildb.com/api/json/v1/1/search.php?s=a";
-
 const App = () => {
   return (
     <div>

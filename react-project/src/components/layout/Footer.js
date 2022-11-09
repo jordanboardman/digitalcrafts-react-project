@@ -1,5 +1,6 @@
 import React from "react";
 import { AppBar, Typography, Toolbar } from "@mui/material";
+
 // import { Container } from "@mui/material";
 
 const Footer = () => {
@@ -20,7 +21,7 @@ const Footer = () => {
           justifyContent: "space-evenly",
         }}
       >
-        <Typography sx={{ fontWeight: "bolder" }}>
+        <Typography sx={{ fontWeight: "bolder", fontFamily: "luminari" }}>
           Made with love by Jordan Boardman using React.js, Redux, and The
           CocktailDB API.
         </Typography>

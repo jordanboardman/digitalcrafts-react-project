@@ -9,6 +9,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea, Container } from "@mui/material";
 import Button from "@mui/material/Button";
+import Paper from "@mui/material";
 
 const Home = () => {
   // const [products, setProducts] = useState("placeholder");
@@ -44,8 +45,19 @@ const Home = () => {
 
   return (
     <>
-      <Container sx={{ display: "flex", justifyContent: "center" }}>
-        <Card sx={{ maxWidth: 445, justifyContent: "center" }}>
+      <Container
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+        <Card
+          elevation={3}
+          sx={{
+            maxWidth: 445,
+            justifyContent: "center",
+          }}
+        >
           <CardActionArea>
             <CardMedia
               component="img"
@@ -54,10 +66,19 @@ const Home = () => {
               alt="Current Cocktail"
             />
             <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
+              <Typography
+                sx={{ fontFamily: "luminari" }}
+                gutterBottom
+                variant="h5"
+                component="div"
+              >
                 {name}
               </Typography>
-              <Typography variant="body2" color="text.secondary">
+              <Typography
+                sx={{ fontFamily: "luminari" }}
+                variant="body2"
+                color="text.secondary"
+              >
                 {ingredients}
               </Typography>
             </CardContent>
@@ -66,11 +87,22 @@ const Home = () => {
       </Container>
       <br />
 
-      <Container sx={{ display: "flex", justifyContent: "center" }}>
-        <Button variant="contained" onClick={() => dispatch(decrementCount(1))}>
+      <Container sx={{ display: "flex", justifyContent: "space-evenly" }}>
+        <Button
+          elevation={3}
+          sx={{ fontFamily: "luminari" }}
+          variant="contained"
+          onClick={() => dispatch(decrementCount(1))}
+        >
           Previous
         </Button>
-        <Button variant="contained" onClick={() => dispatch(incrementCount(1))}>
+
+        <Button
+          elevation={3}
+          sx={{ fontFamily: "luminari" }}
+          variant="contained"
+          onClick={() => dispatch(incrementCount(1))}
+        >
           Next
         </Button>
       </Container>
