@@ -21,17 +21,17 @@ const Header = () => {
           <Link to="/">Spirit Guide</Link>
         </Typography>
 
-        {/* <Typography sx={{ fontWeight: "bolder" }}>
+        <Typography sx={{ fontWeight: "bolder" }}>
           <Link to="/favorites">Favorites</Link>
-        </Typography> */}
+        </Typography>
 
         <Typography sx={{ fontWeight: "bolder" }}>
           <Link to="/about">About this Cool App</Link>
         </Typography>
 
-        {/* <Typography sx={{ fontWeight: "bolder" }}>
+        <Typography sx={{ fontWeight: "bolder" }}>
           <Link to="/jordan">Jordan's Favorites</Link>
-        </Typography> */}
+        </Typography>
       </Toolbar>
     </AppBar>
   );

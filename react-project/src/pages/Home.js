@@ -3,6 +3,12 @@ import { useDispatch, useSelector } from "react-redux";
 import incrementCount from "../actions/incrementCount";
 import decrementCount from "../actions/decrementCount";
 import { useState, useEffect } from "react";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
+import { CardActionArea, Container } from "@mui/material";
+import Button from "@mui/material/Button";
 
 const Home = () => {
   // const [products, setProducts] = useState("placeholder");
@@ -38,19 +44,52 @@ const Home = () => {
 
   return (
     <>
-      <ul>
-        <li>{name}</li>
-        <li>{ingredients}</li>
-        <img src={picture} />
+      <Container sx={{ display: "flex", justifyContent: "center" }}>
+        <Card sx={{ maxWidth: 445, justifyContent: "center" }}>
+          <CardActionArea>
+            <CardMedia
+              component="img"
+              height="440"
+              image={picture}
+              alt="Current Cocktail"
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                {name}
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                {ingredients}
+              </Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
+      </Container>
+      <br />
 
-        {/* {items.map((item) => (
-        <li key={item.id}>{item.name}</li>
-      ))} */}
-      </ul>
-      <button onClick={() => dispatch(decrementCount(1))}>Previous</button>
-      <button onClick={() => dispatch(incrementCount(1))}>Next</button>
+      <Container sx={{ display: "flex", justifyContent: "center" }}>
+        <Button variant="contained" onClick={() => dispatch(decrementCount(1))}>
+          Previous
+        </Button>
+        <Button variant="contained" onClick={() => dispatch(incrementCount(1))}>
+          Next
+        </Button>
+      </Container>
     </>
   );
 };
 
 export default Home;
+
+// {/* <>
+//       <ul>
+//         <li>{name}</li>
+//         <li>{ingredients}</li>
+//         <img src={picture} />
+
+//         {/* {items.map((item) => (
+//         <li key={item.id}>{item.name}</li>
+//       ))} */}
+//       </ul>
+// <button onClick={() => dispatch(decrementCount(1))}>Previous</button>
+// <button onClick={() => dispatch(incrementCount(1))}>Next</button>
+//     </> */}
